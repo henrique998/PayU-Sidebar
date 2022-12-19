@@ -6,13 +6,92 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <script type="module" defer src="/src/main.ts"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
 
-  <title>Vite + TS</title>
+  <script type="module" defer src="/src/main.ts"></script>
+  <script defer src="https://unpkg.com/phosphor-icons"></script>
+
+  <title>PayU - Sidebar</title>
 </head>
 
 <body>
-  <main></main>
+  <main>
+    <aside>
+      <button data-element="toggle-button" class="toggle-button">
+        <i class="ph-caret-left"></i>
+      </button>
+
+      <div class="container">
+        <img data-element="logo" src="/Logo.svg" alt="logo">
+
+        <div class="content">
+          <a href="#" rel="noopener noreferrer" class="active">
+            <i class="ph-house-fill"></i>
+
+            <span>Home</span>
+          </a>
+
+          <a href="#" rel="noopener noreferrer">
+            <i class="ph-file-text-fill"></i>
+
+            <span>Pocket</span>
+          </a>
+
+          <a href="#" rel="noopener noreferrer">
+            <i class="ph-calendar-blank-fill"></i>
+
+            <span>History</span>
+          </a>
+
+          <a href="#" rel="noopener noreferrer">
+            <i class="ph-bookmark-simple-fill"></i>
+
+            <span>Saved</span>
+          </a>
+
+          <div data-element="services-container" class="services-container">
+            <button data-element="services-button" class="services-button">
+              <div>
+                <i class="ph-puzzle-piece-fill"></i>
+
+                <span>Services</span>
+              </div>
+
+              <i data-element="services-button-icon" class="ph-caret-up"></i>
+            </button>
+
+            <ul>
+              <li>
+                <a href="#" rel="noopener noreferrer">
+                  Credit
+                </a>
+              </li>
+
+              <li>
+                <a href="#" rel="noopener noreferrer">
+                  Transfer
+                </a>
+              </li>
+
+              <li>
+                <a href="#" rel="noopener noreferrer">
+                  Cash
+                </a>
+              </li>
+
+              <li>
+                <a href="#" rel="noopener noreferrer">
+                  My Bills
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </main>
 </body>
 
 </html>

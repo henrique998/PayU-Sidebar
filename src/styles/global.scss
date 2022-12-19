@@ -2,11 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 :root {
     --background: #FFFFFF;
-    --text: #000000;
+    --bg-sidebar: #0D0D0D;
+    --bg-link: #373737;
+    --text: #707070;
+    --text-active: #D0D0D0;
 }
 
 :focus {
@@ -29,10 +33,6 @@ button {
 
 a {
     text-decoration: none;
-}
-
-ul {
-    list-style: none;
 }
 
 button {
